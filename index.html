@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>حاسبة الأجور بالمغرب 2026 — احسب أجرتك الصافية في الوظيفة العمومية</title>
+  <meta name="description" content="محاكي مجاني لحساب الأجرة الصافية لموظفي الوظيفة العمومية بالمغرب: الأساتذة، الأطباء، الممرضون والمتصرفون. الأجر الأساسي، تعويض الإقامة، التعويضات العائلية، التقاعد، AMO والضريبة على الدخل.">
+  <meta name="theme-color" content="#0f3d2e">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+  <meta property="og:title" content="حاسبة الأجور بالمغرب 2026">
+  <meta property="og:description" content="احسب أجرتك الصافية في الوظيفة العمومية في ثوانٍ.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_MA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "حاسبة الأجور بالمغرب",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "inLanguage": "ar-MA",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "MAD" }
+  }
+  </script>
+  <!-- ضع هنا كود Google AdSense بعد القبول -->
+</head>
+<body>
+  <a class="skip" href="#calc">تخطَّ إلى الحاسبة</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__in">
+      <a href="/" class="logo"><span class="logo__mark">د</span> حاسبة الأجور</a>
+      <nav class="nav">
+        <a href="#calc">الحاسبة</a>
+        <a href="#how">طريقة الحساب</a>
+        <a href="#faq">أسئلة شائعة</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="badges">
+        <span>تحديث 2026</span><span>مجاني</span><span>الأساتذة · الأطباء · الممرضون</span>
+      </div>
+      <h1>احسب أجرتك الصافية في الوظيفة العمومية بالمغرب</h1>
+      <p class="lead">اختر هيئتك ودرجتك ورتبتك ووضعيتك العائلية، واحصل على ورقة أداء مفصلة قابلة للطباعة.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <div class="ad">إعلان</div>
+
+    <section id="calc" class="grid">
+      <form id="form" class="card form" novalidate>
+        <h2>معطياتك</h2>
+
+        <label>الهيئة
+          <select id="corps" required></select>
+        </label>
+
+        <label>الدرجة
+          <select id="grade" required></select>
+        </label>
+
+        <label>الرتبة
+          <select id="echelon" required></select>
+        </label>
+        <p class="hint" id="indexHint"></p>
+
+        <label>منطقة العمل (تعويض الإقامة)
+          <select id="zone"></select>
+        </label>
+
+        <fieldset>
+          <legend>الوضعية العائلية</legend>
+          <div class="seg">
+            <label><input type="radio" name="married" value="0" checked> أعزب</label>
+            <label><input type="radio" name="married" value="1"> متزوج</label>
+          </div>
+          <label class="check" id="spouseWrap" hidden>
+            <input type="checkbox" id="spouseDependant" checked> الزوج(ة) بدون دخل (في الكفالة)
+          </label>
+          <label>عدد الأطفال
+            <input type="number" id="children" min="0" max="10" value="0" inputmode="numeric">
+          </label>
+        </fieldset>
+
+        <label class="check">
+          <input type="checkbox" id="mutualiste" checked> منخرط في التعاضدية
+        </label>
+
+        <button type="submit" class="btn">احسب أجرتي</button>
+      </form>
+
+      <div class="card result" id="result" aria-live="polite">
+        <div class="empty">املأ المعطيات واضغط «احسب أجرتي».</div>
+      </div>
+    </section>
+
+    <div class="ad">إعلان</div>
+
+    <section id="how" class="card prose">
+      <h2>كيف تُحسب الأجرة؟</h2>
+      <ol class="steps">
+        <li><b>الأجر الأساسي:</b> سنوياً = (الرقم الاستدلالي − 150) × 50.92 + 13866 درهم، ثم يُقسم على 12.</li>
+        <li><b>تعويض الإقامة:</b> 10% في المنطقة ج، 15% في المنطقة ب، 25% في المنطقة أ من الأجر الأساسي.</li>
+        <li><b>التعويضات النظامية:</b> حسب الهيئة والدرجة والرتبة.</li>
+        <li><b>التعويضات العائلية:</b> 300 درهم لكل طفل من الثلاثة الأوائل، و100 درهم من الرابع إلى السادس.</li>
+        <li><b>الاقتطاعات:</b> التقاعد 14%، التأمين الإجباري عن المرض 2.5% (بين 70 و400 درهم)، التعاضدية، والضريبة على الدخل.</li>
+      </ol>
+    </section>
+
+    <section id="faq" class="card prose">
+      <h2>أسئلة شائعة</h2>
+      <details><summary>هل النتيجة رسمية؟</summary>
+        <p>لا. هذه أداة مستقلة تعطي تقديراً. المرجع الرسمي هو ورقة الأداء الصادرة عن الخزينة العامة للمملكة.</p></details>
+      <details><summary>أين أجد رتبتي ورقمي الاستدلالي؟</summary>
+        <p>في قرار التعيين أو الترقية، أو في ورقة الأداء الشهرية.</p></details>
+      <details><summary>ما هي أشطر الضريبة على الدخل؟</summary>
+        <p>معفى حتى 40.000 درهم صافية سنوياً، ثم 10% و20% و30% و34% و37%.</p></details>
+      <details><summary>هل التعويضات العائلية خاضعة للضريبة؟</summary>
+        <p>لا، فهي معفاة من الضريبة ومن اقتطاع التقاعد.</p></details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>⚠️ أداة غير رسمية — النتائج تقديرية ولا تعوّض ورقة الأداء الرسمية.</p>
+      <p>© <span id="year"></span> حاسبة الأجور بالمغرب</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
